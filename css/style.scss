@@ -17,12 +17,15 @@ body {
         z-index: 10;
         position: sticky;
         top: 0;
-        align-items: center;
+
         background-color: white;
         border-bottom: 1px solid;
         padding: 2% 8%;
-        text-align: center;
-        min-height: 15rem;
+        min-height: 10rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         #logo {
             a {
@@ -35,8 +38,14 @@ body {
         }
 
         nav {
+min-width: 60%;
             ul {
                 padding: 0;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
 
                 li {
                     border: 1px solid black;
@@ -157,6 +166,8 @@ body {
             margin-top: 4rem;
 
             .skill {
+                max-width: 20rem;
+
                 img {
                     width: 10rem;
                     max-height: auto;
@@ -196,6 +207,7 @@ body {
         gap: 10%;
 
         h2 {
+            text-align: center;
             margin: 2% 0;
             font-size: 2.2rem;
             font-weight: 100;
@@ -204,21 +216,28 @@ body {
 
         .row {
             gap: 10%;
-            display: flex;   
+            display: flex;
             flex-wrap: wrap;
-            
+            justify-content: center;
+
             .real {
                 text-align: center;
                 min-height: auto;
                 margin: 8% 0;
+                max-width: 20rem;
 
-                img {
+                .real-image {
                     border: 1px solid black;
                     border-radius: 10%;
-                    width: 100%;
-                    max-height: auto;
-                    object-fit: contain;
+                    min-height: 2rem;
+                    display: flex;
+
+                    img {
+                        max-width: 100%;
+                        object-fit: contain;
+                    }
                 }
+
 
                 h3 {
                     text-align: center;
@@ -267,5 +286,8 @@ body {
     }
 
     // RESPONSIVE
+
+    @media all and (min-width: 768px) {}
+
 
 }

@@ -15,12 +15,13 @@ body header {
   z-index: 10;
   position: sticky;
   top: 0;
-  align-items: center;
   background-color: white;
   border-bottom: 1px solid;
   padding: 2% 8%;
-  text-align: center;
-  min-height: 15rem;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 body header #logo a {
@@ -31,8 +32,16 @@ body header #logo a {
   color: black;
 }
 
+body header nav {
+  min-width: 60%;
+}
+
 body header nav ul {
   padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 body header nav ul li {
@@ -144,6 +153,10 @@ body #skills .row {
   margin-top: 4rem;
 }
 
+body #skills .row .skill {
+  max-width: 20rem;
+}
+
 body #skills .row .skill img {
   width: 10rem;
   max-height: auto;
@@ -176,6 +189,7 @@ body #reals {
 }
 
 body #reals h2 {
+  text-align: center;
   margin: 2% 0;
   font-size: 2.2rem;
   font-weight: 100;
@@ -186,19 +200,25 @@ body #reals .row {
   gap: 10%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 body #reals .row .real {
   text-align: center;
   min-height: auto;
   margin: 8% 0;
+  max-width: 20rem;
 }
 
-body #reals .row .real img {
+body #reals .row .real .real-image {
   border: 1px solid black;
   border-radius: 10%;
-  width: 100%;
-  max-height: auto;
+  min-height: 2rem;
+  display: flex;
+}
+
+body #reals .row .real .real-image img {
+  max-width: 100%;
   object-fit: contain;
 }
 
